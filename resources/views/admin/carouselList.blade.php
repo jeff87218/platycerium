@@ -6,14 +6,10 @@
             <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
                 <form class="row g-3" method="post" action="">
                     @csrf
-{{--                    <div class="col-auto">--}}
-{{--                        <label for="inputPassword2" class="visually-hidden">搜尋</label>--}}
-{{--                        <input name="keyword" type="search" class="form-control" id="inputPassword2" placeholder="搜尋">--}}
-{{--                    </div>--}}
                     <div class="col-auto">
 {{--                        <button type="submit" class="btn btn-success">搜尋</button>--}}
                         <button data-bs-toggle="modal"
-                                data-bs-target="#addLoopsModal" class="btn btn-warning" type="button">新增鹿角蕨
+                                data-bs-target="#addLoopsModal" class="btn btn-warning" type="button">新增輪播圖
                         </button>
                     </div>
                 </form>
@@ -22,7 +18,7 @@
         </div>
     </div>
     <div>
-        <form method="post" action="{{route('admin.item-info.upload-image')}}" enctype="multipart/form-data">
+        <form method="post" action="{{route('admin.carousel-info.upload-image')}}" enctype="multipart/form-data">
             @csrf
             <div class="modal fade" id="addLoopsModal" tabindex="-1"
                  aria-labelledby="addLoopsModalLabel" aria-hidden="true">
@@ -36,12 +32,12 @@
                             <table class="table table-hover" id="inputTable">
                                 <tbody style="white-space: nowrap;" id="inputTableTr">
                                 <tr>
-                                    <th scope="row">鹿角蕨名稱</th>
+                                    <th scope="row">輪播圖名稱</th>
                                     <td><input name="name[]" type="text" class="form-control"
-                                               placeholder="例如:ㄌㄐㄓ" required></td>
+                                               placeholder="例如:123" required></td>
                                     <td>
                                         <label for="po_image" class="block text-sm leading-5 font-medium text-gray-700">
-                                            圖片上傳
+                                            表單上傳
                                             <input id="image-input" type="file" name="po_image[]" accept=".jpg, .png" >
                                         </label>
                                     </td>
@@ -68,7 +64,7 @@
                 <!--大標題 start-->
                 <thead class="table-success" style="vertical-align: middle;font-size: 14pt;">
                 <tr>
-                    <th scope="col" colspan="6">鹿角蕨管理</th>
+                    <th scope="col" colspan="6">輪播圖管理</th>
                 </tr>
                 </thead>
                 <!--大標題 end-->
@@ -76,7 +72,7 @@
                 <thead class="table-dark" style="vertical-align: middle;">
                 <tr>
                     <th scope="col">項目</th>
-                    <th scope="col">鹿角蕨名稱</th>
+                    <th scope="col">輪播圖名稱</th>
                     <th scope="col">圖片網址</th>
                     <th scope="col">選項</th>
 
@@ -89,7 +85,7 @@
                         <td>{{$item->name}}</td>
                         <td><a href="{{asset('storage/uploads/images/'.$item->image_url)}}">{{asset('storage/uploads/images/'.$item->image_url)}}</a></td>
 
-                        <td><a class="btn btn-danger" href="{{ route('admin.item-delete',$item->id) }}">刪除</a></td>
+                        <td><a class="btn btn-danger" href="{{ route('admin.carousel-delete',$item->id) }}">刪除</a></td>
                     </tr>
                 @endforeach
                 </tbody>

@@ -35,6 +35,11 @@ Route::group(['prefix' => '/admin','middleware' => 'role:admin'], function () {
 
     Route::get('/listItemInfo', 'Admin\itemInfoController@index' )->name('admin.item-info');
     Route::post('/addItem', 'Admin\itemInfoController@uploadImage')->name('admin.item-info.upload-image');
+    Route::get('/deleteItem/{id}', 'Admin\itemInfoController@destroy' )->name('admin.item-delete');
+
+    Route::get('/listCarouselInfo', 'Admin\CarouselController@index')->name('admin.carousel-info');
+    Route::post('/addCarouse', 'Admin\CarouselController@uploadImage')->name('admin.carousel-info.upload-image');
+    Route::get('/deleteCarouse/{id}', 'Admin\CarouselController@destroy' )->name('admin.carousel-delete');
 
 });
 

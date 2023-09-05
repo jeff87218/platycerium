@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Carousel;
 use App\Item;
 use Illuminate\Http\Request;
 
@@ -23,11 +24,12 @@ class HomeController extends Controller
      *
      *
      */
-    public function index(Request $request)
+    public function index()
     {
+        $carousel = Carousel::query()->select('id', 'name','image_url')->get();
         $plates= Item::query()->select('id', 'name','image_url')->paginate(15);
 
-        return view('home')->with('plates', $plates);
+        return view('home')->with('plates', $plates)->with('carousels', $carousel);
 
     }
 }

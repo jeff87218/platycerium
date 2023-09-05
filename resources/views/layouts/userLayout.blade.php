@@ -86,46 +86,6 @@
                         <a class="dropdown-item" href="/">頁面3</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/" role="button"
-                       id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                       style="color: #2b7359;">關於我們</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="/">頁面1</a>
-                        <a class="dropdown-item" href="/">頁面2</a>
-                        <a class="dropdown-item" href="/">頁面3</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/" role="button"
-                       id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                       style="color: #2b7359;">關於我們</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="/">頁面1</a>
-                        <a class="dropdown-item" href="/">頁面2</a>
-                        <a class="dropdown-item" href="/">頁面3</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/" role="button"
-                       id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                       style="color: #2b7359;">關於我們</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="/">頁面1</a>
-                        <a class="dropdown-item" href="/">頁面2</a>
-                        <a class="dropdown-item" href="/">頁面3</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/" role="button"
-                       id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                       style="color: #2b7359;">關於我們</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="/">頁面1</a>
-                        <a class="dropdown-item" href="/">頁面2</a>
-                        <a class="dropdown-item" href="/">頁面3</a>
-                    </div>
-                </li>
             </ul>
         </div>
     </div>
