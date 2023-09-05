@@ -24,6 +24,16 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <style>
+        body{
+
+            background: #000 url('{{asset('/images/bg.jpg')}}') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center bottom;
+
+        }
+    </style>
 
 </head>
 <body>
